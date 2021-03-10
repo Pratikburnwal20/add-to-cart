@@ -9,9 +9,8 @@ import io.org.addtocart.entity.Person;
 
 @RestController
 public interface PersonRestController {
-	
+
 	@GetMapping("/persondetails")
 	public List<Person> findAll();
-	
 
 }

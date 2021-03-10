@@ -3,14 +3,15 @@ package io.org.addtocart.entity;
 import java.util.Date;
 
 public class Person {
-	
+
 	private int personId;
 	private String personName;
 	private String emailId;
 	private long phoneNumber;
 	private Date Dob;
-	
-	public Person() {}
+
+	public Person() {
+	}
 
 	public Person(int personId, String personName, String emailId, long phoneNumber, Date dob) {
 		super();
@@ -20,8 +21,6 @@ public class Person {
 		this.phoneNumber = phoneNumber;
 		Dob = dob;
 	}
-
-
 
 	public int getPersonId() {
 		return personId;
@@ -62,13 +61,11 @@ public class Person {
 	public void setDob(Date dob) {
 		Dob = dob;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Person [personId=" + personId + ", personName=" + personName + ", emailId=" + emailId + ", phoneNumber="
 				+ phoneNumber + "]";
 	}
-	
-	
 
 }

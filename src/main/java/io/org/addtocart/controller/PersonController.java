@@ -16,13 +16,14 @@ import io.org.addtocart.restcontroller.PersonRestController;
 import io.org.addtocart.service.PersonService;
 
 @Controller
-public class PersonController implements PersonRestController{
+public class PersonController implements PersonRestController {
 
 	@Autowired
-	private PersonService  personservice;
+	private PersonService personservice;
+
 	@Override
 	public List<Person> findAll() {
-		
+
 		return personservice.findAll();
 	}
 
