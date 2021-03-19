@@ -3,12 +3,13 @@ package io.org.init;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import ch.qos.logback.core.net.SyslogOutputStream;
-import io.org.addtocart.AddToCartConfig;
 
 @SpringBootApplication
-@Import({ AddToCartConfig.class })
+//@EnableJpaRepositories("io.org.addtocart.dao")
+//@Import({ AddToCartConfig.class })
 public class AddToCartApplication {
 
 	public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class AddToCartApplication {
 		display();
 	}
 
-	/**
+	/**PersoonRepository
 	 * This is display method which is the part of
 	 * {@link AddToCartApplication#main(String[])}
 	 */

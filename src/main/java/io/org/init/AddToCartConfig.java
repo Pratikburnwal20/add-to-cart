@@ -1,7 +1,7 @@
 /**
  * 
  */
-package io.org.addtocart;
+package io.org.init;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Configuration;
  *
  */
 @Configuration
-@ComponentScan
+//@ComponentScan("io.org.addtocart")
+@ComponentScan(basePackages = {"io.org.addtocart.cofig"})
 public class AddToCartConfig {
 
 }

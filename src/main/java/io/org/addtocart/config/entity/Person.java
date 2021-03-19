@@ -1,9 +1,16 @@
-package io.org.addtocart.entity;
+package io.org.addtocart.config.entity;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+
+@Entity
 public class Person {
 
+	@Id
 	private int personId;
 	private String personName;
 	private String emailId;
