@@ -1,4 +1,4 @@
-package io.org.init;
+package io.org;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,11 +15,10 @@ public class AddToCartApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AddToCartApplication.class, args);
 		System.out.println("Application is up");
-
 		display();
 	}
 
-	/**PersoonRepository
+/**PersoonRepository
 	 * This is display method which is the part of
 	 * {@link AddToCartApplication#main(String[])}
 	 */

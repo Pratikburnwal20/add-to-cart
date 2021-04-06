@@ -3,6 +3,7 @@ package io.org.addtocart.config.entity;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 public class Person {
 
 	@Id
+	@GeneratedValue
 	private int personId;
 	private String personName;
 	private String emailId;
